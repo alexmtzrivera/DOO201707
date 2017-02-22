@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Registro</h1>
+        
+        <form action="Registro" name="formulario">
+            
+            Usuario:<input type="text" name="usuario" value=""/><br><br>
+            Contraseña:<input type="password" name="contraseña" value=""/><br><br>
+            Email:<input type="text" name="email" value=""/><br><br>
+            
+            Mes:
+            <select name="op">
+                
+                <option value=""> Seleccionar </option>
+                <option value="enero"> Enero </option>
+                <option value="febrero"> Febrero </option>
+                <option value="marzo"> Marzo </option>
+                <option value="abril"> Abril</option>
+                <option value="mayo"> Mayo </option>
+                <option value="junio"> Junio </option>
+                <option value="julio"> Julio </option>
+                <option value="agosto"> Agosto </option>
+                <option value="septiembre"> Septiembre </option>
+                <option value="octubre"> Octubre </option>
+                <option value="noviembre"> Nomviembre </option>
+                <option value="diciembre"> Diciembre </option>
+
+            </select>
+            <h2> Sexo </h2>
+                    Masculino:<input type="radio" name="genero" value="m"/><br>
+                    Femenino:<input type="radio" name="genero" value="f"/><br><br>
+            
+             Soy mayor de edad:<input type="checkbox" name="mayor" value="si"/><br><br>
+             
+             Acerca de mi: <textarea rows="5" name="acerca"></textarea>
+             <br><br>
+             
+             <input type="button"  value="borrar" onclick="limpiar()"/>  <input type="submit" value="enviar" /><br><br>
+
+        </form>
+        
+        <script> 
+        function limpiar(){
+            document.forms["formulario"].reset();
+        }
+               
+    
+    
+    </script>
+    
+        
+        
+        
+    </body>
+        
+    
+    
+</html>
